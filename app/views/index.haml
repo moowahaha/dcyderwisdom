@@ -9,4 +9,11 @@
     %link{rel: "stylesheet", href: "/stylesheet.css", type: "text/css"}
 
   %body
-    = comment.title
+    #comment
+      %span{style: "font-size: #{font_size_for(comment)}%"}
+        &ldquo;#{comment.title}&rdquo;
+
+    #whence
+      &mdash;
+      = Time.now.year
+      %a{href: 'http://www.dcyder.com'} dcyder.com

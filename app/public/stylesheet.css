@@ -1,0 +1,14 @@
+body {
+    font-family: Garamond, serif;
+}
+
+#comment {
+    padding: 40px;
+    font-size: 5em;
+    font-family: Georgia, serif;
+    font-style: italic;
+}
+
+#whence {
+    padding-left: 60px;
+}
