@@ -4,16 +4,25 @@
 
   %head
     %title
-      Dcyder Wisdom - Latest Nugget of Wisdom from Dcyder.com
+      Dcyder Wisdom - Latest nugget of wisdom from Dcyder.com
 
     %link{rel: "stylesheet", href: "/stylesheet.css", type: "text/css"}
 
   %body
-    #comment
-      %span{style: "font-size: #{font_size_for(comment)}%"}
-        &ldquo;#{comment.title}&rdquo;
+    #wrapper
 
-    #whence
-      &mdash;
+      #comment
+        %span{style: "font-size: #{font_size_for(comment)}%"}
+          &ldquo;#{comment.title}&rdquo;
+
+      #whence
+        &mdash;
+        in response to
+        %a{href: comment.url} this
+        dilemma.
+
+      #push
+
+    #footer
       = Time.now.year
       %a{href: 'http://www.dcyder.com'} dcyder.com

@@ -1,5 +1,25 @@
-body {
+* {
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
     font-family: Garamond, serif;
+}
+
+#wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -25px;
+}
+
+#footer, #push {
+    height: 25px;
+}
+
+#footer {
+    padding-left: 40px;
 }
 
 #comment {
