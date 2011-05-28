@@ -6,6 +6,7 @@
     %title
       Dcyder Wisdom - Latest nugget of wisdom from Dcyder.com
 
+    %meta{name: 'description', content: 'Quotes from dcyder.com dilemmas. Helpful advice from members of the public.'}
     %link{rel: "stylesheet", href: "/stylesheet.css", type: "text/css"}
 
   %body
@@ -24,5 +25,16 @@
       #push
 
     #footer
-      = Time.now.year
-      %a{href: 'http://www.dcyder.com'} dcyder.com
+      %span
+        &copy;
+        = Time.now.year
+        %a{href: 'http://www.dcyder.com'} Dcyder.com
+
+      %span
+        %a{href: 'https://github.com/moowahaha/dcyderwisdom'} Project page.
+
+      %span
+        %a{href: 'http://www.dcyder.com/rss/comments'}
+          %img{src: '/rss.png'}
+        %a{href: 'http://www.dcyder.com/rss/comments', rel: 'canonical'}
+          Comments

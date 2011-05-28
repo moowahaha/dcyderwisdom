@@ -24,6 +24,10 @@ html, body {
     padding-left: 40px;
 }
 
+#footer span {
+    padding-right: 20px;
+}
+
 #comment {
     padding: 40px;
     font-size: 5em;
