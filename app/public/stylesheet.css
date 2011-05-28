@@ -5,6 +5,8 @@
 html, body {
     height: 100%;
     font-family: Garamond, serif;
+    background-image: url(background.jpg);
+    background-repeat: repeat;
 }
 
 #wrapper {
