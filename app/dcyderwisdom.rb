@@ -17,7 +17,9 @@ end
 module Sinatra
   module Helpers
     def font_size_for comment
-      # 85 character string should be 5em in size
+      # for an 85 character string, the font size should be 5em.
+      # the 2d area of a each character is it's size ** its height:width ratio (approx 1.75...)
+      # the total physical area available is 85 * 2d font size
       area = 85 * (5 ** 1.75)
       Math.sqrt(area.to_f / comment.title.length)
     end
