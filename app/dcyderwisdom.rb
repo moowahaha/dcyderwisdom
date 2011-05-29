@@ -3,10 +3,14 @@ require 'haml'
 require 'feedzirra'
 
 get '/' do
+  feed = Feedzirra::Feed.fetch_and_parse(
+      "http://www.dcyder.com/rss/comments?limit=1"
+  )
+
+  return error(haml(:feed_error)) unless feed
+
   haml :index, locals: {
-      comment: Feedzirra::Feed.fetch_and_parse(
-          "http://www.dcyder.com/rss/comments?limit=1"
-      ).entries.first
+      comment: feed.entries.first
   }
 end
 

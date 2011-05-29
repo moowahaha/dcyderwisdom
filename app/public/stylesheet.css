@@ -41,3 +41,8 @@ a img {
 #whence {
     padding-left: 60px;
 }
+
+#error {
+    text-align: center;
+    padding-top: 40px;
+}
