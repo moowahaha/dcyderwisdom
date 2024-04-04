@@ -1,8 +1,8 @@
 source "http://rubygems.org"
 
-gem "sinatra"
+gem "sinatra", ">= 2.0.0"
 gem "haml"
-gem "feedzirra"
+gem "feedzirra", ">= 0.1.2"
 gem "i18n"
 
 group :development do
